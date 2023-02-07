@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2? família= Open+Sans:wght@300;700 &family= Roboto:wght@100;300;500;700 & display=swap');
+
+/*criar uma variavel global*/
+:root{
+    --primary-color:  rgb(240, 175, 218);
+    --primary-color-darker: rgb(9, 202, 138);
+}
+
+*{
+    box-sizing: border-box;
+    outline: 0;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-color);
+    font-family: 'Open sans', sans-serif;
+    font-size: 1.3em;
+    /*altura da fonte*/
+    line-height: 1.5;
+}
+
+h1{
+    text-align: center;
+    color:  rgb(240, 175, 218);
+    text-shadow: 2px 1px rgb(218, 30, 139);
+}
+
+.container{
+    max-width: 640px;
+    /*para centralizar auto (as laterais) e esse 50px foi para o topo*/
+    margin: 50px auto;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+form input, form label, form button{
+    /*display um abaixo do outro*/
+    display: block;
+    /*pegar a largura toda*/
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+
+.calculadora{
+    width: 400px; 
+    margin-left: 5em;
+    display: flex;
+}
+
+.display{
+    font-size: 2em;
+    width: 100%;
+    text-align: right;
+    border-radius: 5px;
+}
+
+.btn{
+    width: 100%;
+    height: 50px;
+    font-size: 1em;
+    border: none;
+    background-color: rgba(233, 99, 166, 0.151);
+    color:  rgb(218, 30, 139);
+    cursor: pointer;
+}
+
+.btn:hover {
+    background:  rgba(218, 30, 140, 0.473);
+    color: #fff;
+}
+
+.btn-eq{
+    background: rgb(218, 30, 139);
+    color: #fff;
+}
+
+.btn-eq:hover{
+    background: rgba(41, 36, 38, 0.527);
+    color:  rgb(218, 30, 139);
+}
